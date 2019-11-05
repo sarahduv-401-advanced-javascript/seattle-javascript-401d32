@@ -10,6 +10,7 @@ const players = mongoose.Schema({
   team: { type: String, required: true },
 });
 
+
 players.post('findOne', function (doc) {
   doc.name = doc.name.toUpperCase();
 });
@@ -23,4 +24,6 @@ players.post('save', function () {
   console.log('saving', this);
 });
 
+//'players' is the table name
+// players variable is the schema of players
 module.exports = mongoose.model('players', players);

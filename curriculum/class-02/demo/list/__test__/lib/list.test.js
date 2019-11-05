@@ -103,6 +103,16 @@ describe('List', () => {
 
   });
 
+  it('map() returns a new list ***lecture*** version', () => {
+
+    let myList = loadList();
+    let newList = myList.map( (val) => {
+      return val + 1;
+    });
+    expect(newList.length).toEqual(myList.length);
+    expect(newList.data[0]).not.toEqual(myList.data[0]);
+  });
+
   it('filter() returns undefined if the list is empty', () => {
     let myList = new List();
     expect( myList.filter(v => v > 1) ).toBeUndefined();

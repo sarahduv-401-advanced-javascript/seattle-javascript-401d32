@@ -1,0 +1,23 @@
+{
+  "name": "demo-in-class",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "eslint": "^6.5.1",
+    "express": "^4.17.1",
+    "jest": "^24.9.0",
+    "json-server": "^0.15.1",
+    "lint": "^0.7.0",
+    "supertest": "^4.0.2",
+    "superagent": "^5.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest --verbose",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
