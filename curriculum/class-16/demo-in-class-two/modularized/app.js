@@ -1,8 +1,8 @@
 'use strict';
 
-const events = require('./events');
+const events = require('./modularized/events');
 
-const logger = require('./logger.js');
+const logger = require('./modularized/logger.js');
 const cache = require('./cache.js');
 
 events.emit('save', {id:77});
