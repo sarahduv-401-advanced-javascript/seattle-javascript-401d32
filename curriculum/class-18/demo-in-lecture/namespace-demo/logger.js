@@ -1,11 +1,16 @@
 'use strict';
 
+// CLIENT
 const io = require('socket.io-client');
 const client = io.connect('http://localhost:3001');
 const schoool = io.connect('http://localhost:3001/school');
 
-const faker = require('faker');
 
-client.emit('speak', faker.hacker.phrase());
-school.emit('school-speak', faker.hacker.phrase());
+client.on('message', (payload) => {
+  console.log('heard', payload);
+});
+
+school.on('message-school', (payload) => {
+  console.log('heard', payload);
+});
 
