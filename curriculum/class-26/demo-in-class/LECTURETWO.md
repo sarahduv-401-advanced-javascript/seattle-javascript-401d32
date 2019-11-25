@@ -9,3 +9,8 @@
   - Behavior - How are users interacting with the UI
   - Events - What browser / API specific things are occuring in our UI
   - Template - What layout does our UI use to display content?
+
+- npm install react-scripts node-sass react react-dom
+- add a start script: "react-scripts start"
+- all of your React code goes inside "src"
+- otherwise it goes in "public"
