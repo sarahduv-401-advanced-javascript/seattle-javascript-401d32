@@ -44,4 +44,7 @@ Notice in the above, there is not a class, nor is there a constructor or a rende
   - Handling events
   - Cleaning up side effects
 - This replaces componentDidMount, componentDidUpdate, componentWillUnmount, ect.
-- 
+
+### useReducer
+- This uses getters and setters more like how thaditional this.setState would update values.
+- The getter is a initialState value, and the setter is a function that handles when and how the getter value is updated.

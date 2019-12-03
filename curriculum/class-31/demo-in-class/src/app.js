@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
+import Counter from './counter-reducer.js'
+
 const App = () => {
 //   this.state = {
 //     count: 0
@@ -22,15 +24,17 @@ const App = () => {
     // old way --> this.setSate({count: count++});
   }
 
-  const handleName = (e) => {
+  const handleName = (e, str) => {
     // e.preventDefault();
+    console.log(str);
     setName(e.traget.value);
   }
 
   return (
     <>
     <h1>Hello {name}</h1>
-    <input onChange={hanldeName} />
+    {/* do not invoke the function below, you can do (e) => handleName(e, 'button input')*/}
+    <input onChange={handleName} />
     <p>Count: {count}</p>
     <button onClick={incrementCount}>Increment</button>
     </>
